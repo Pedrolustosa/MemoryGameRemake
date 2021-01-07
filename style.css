@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    background-image: url(background.png);
+
+}
+
+.github i{
+    font-size: 45px;
+    color: #fff;
+}.github:hover i{
+    color: black;
+    border-radius: 100%;
+    transform: scale(1.40);
+    box-shadow: 0 1px 6px 10px rgba(0,0,0,.08), 0 1px 6px 10px rgba(0,0,0,.05);
+    transition: .16s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.linkedin i{
+    font-size: 45px;
+    color: #fff;
+}.linkedin:hover i{
+    color:#0a66c2;
+    border-radius: 100%;
+    transform: scale(1.40);
+    box-shadow: 0 5px 6px 10px rgba(0,0,0,.08), 0 5px 6px 10px rgba(0,0,0,.05);
+    transition: .16s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+
+.position-relative{
+    padding: 10px;
+}
+
+.main-game{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.genius{
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 7px;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color:#00cec9;
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    border-bottom-right-radius: 100%;
+}.blue:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color:#d63031;
+    border-top-right-radius: 100%;
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}.red:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: #fdcb6e;
+    border-bottom-left-radius: 100%;
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}.yellow:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.green{
+    grid-area: verde;
+    background-color: #00b894;
+    border-top-left-radius: 100%;
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}.green:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.selected{
+    opacity: 0.4;
+}
